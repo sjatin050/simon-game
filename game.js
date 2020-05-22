@@ -14,7 +14,7 @@ $(document).keydown(function() {
   }
 });
 
-$(document).on("tap",(function() {
+$(document).on("click",(function() {
   if (!started) {
     $("#level-title").text("Level " + level);
     nextSequence();
