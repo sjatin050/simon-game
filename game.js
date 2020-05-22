@@ -14,13 +14,14 @@ $(document).keydown(function() {
   }
 });
 
-$(document).Touch(function() {
+$(document).on("tap",(function() {
   if (!started) {
     $("#level-title").text("Level " + level);
     nextSequence();
     started = true;
   }
 });
+
 
 
 $(".btn").click(function(){
